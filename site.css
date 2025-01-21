@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background: #613659;
+}
+
+h1 {
+    color: #fff;
+    position: relative;
+}
+
+h1 span {
+    border-right: 2px solid #fff;
+    animation: blink 1s infinite;
+    animation-delay: 2s;
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    75% {
+        opacity: 0.5;
+    }
+}
+.grow-button {
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for the transform effect */
+    border-radius:10px;
+    padding:.3vh;
+    padding-left:2vh;
+    padding-right:2vh;
+    border:1px solid;
+    border-color:black;
+    margin-top: 150px; 
+    position: fixed; 
+    background-color: #c197d2;
+    color:black;  
+}
+
+.grow-button:hover {
+    transform: scale(1.2); /* Increase the size of the button by 10% */
+}
